@@ -7,7 +7,7 @@ function OstaleSlike() {
 
 
   useEffect(()=>{
-    fetch('http://localhost:5000/products', {
+    fetch('https://ercegart.herokuapp.com/products', {
       method: 'POST', // or 'PUT'
       headers: {
         'Content-Type': 'application/json',

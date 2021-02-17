@@ -13,7 +13,7 @@ function Product() {
     let { id } = useParams();
 console.log(id)
     useEffect(()=>{
-        fetch('http://localhost:5000/products/findone', {
+        fetch('https://ercegart.herokuapp.com/products/findone', {
           method: 'POST', // or 'PUT'
           headers: {
             'Content-Type': 'application/json',
