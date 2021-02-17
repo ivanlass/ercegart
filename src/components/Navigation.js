@@ -1,6 +1,11 @@
+import React, {useContext} from 'react'
 import '../App.css';
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
+import uk from '../images/uk.svg'
+import hr from '../images/hr.svg'
+import {LanguageContext} from '../LanguageContext'
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -24,6 +29,8 @@ import AkrilNaPlatnu from '../pages/AkrilNaPlatnu'
 import OstaleSlike from '../pages/OstaleSlike';
 
 function Navigation() {
+  const [language, setLanguage] = useContext(LanguageContext)
+
   return (
     <div className="App">
       <Router>
@@ -37,9 +44,11 @@ function Navigation() {
 
               <Nav.Link ><Link className="navbar-nav nav-link" to="/">Home</Link></Nav.Link>
               <Nav.Link ><Link className="navbar-nav nav-link" to="/abonos">Abonos</Link></Nav.Link>
-              <Nav.Link ><Link className="navbar-nav nav-link" to="/unikatni">Unikatni drveni namještaj</Link></Nav.Link>
-              <Nav.Link ><Link className="navbar-nav nav-link" to="/slike">Umjetničke slike</Link></Nav.Link>
-              <Nav.Link ><Link className="navbar-nav nav-link" to="/contact">Kontakt</Link></Nav.Link>
+              <Nav.Link ><Link className="navbar-nav nav-link" to="/unikatni">{language === "en" ? "Unique wooden furniture": "Unikatni drveni namještaj"}</Link></Nav.Link>
+              <Nav.Link ><Link className="navbar-nav nav-link" to="/slike">{language === "en" ? "Paintings": "Umjetničke slike"}</Link></Nav.Link>
+              <Nav.Link ><Link className="navbar-nav nav-link" to="/contact">{language === "en" ? "Contact": "Kontakt"}</Link></Nav.Link>
+              {language === "hr" && <Nav.Link onClick={()=> setLanguage("en")}><a className="navbar-nav nav-link language"><img src={uk} style={{width:"24px", marginRight:"5px"}}/>ENG</a></Nav.Link>}
+              {language === "en" && <Nav.Link onClick={()=> setLanguage("hr")}><a className="navbar-nav nav-link language"><img src={hr} style={{width:"24px", marginRight:"5px"}}/>HR</a></Nav.Link>}
             </Nav>
           </Navbar.Collapse>
         </Navbar>

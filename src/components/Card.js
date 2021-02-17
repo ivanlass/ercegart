@@ -1,13 +1,12 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import '../Card.css'
-import patio from '../images/patio.jpg'
 import {Link} from "react-router-dom";
-
+import {LanguageContext} from '../LanguageContext'
 
 
 
 function Card(props) {
-
+  const [language, setLanguage] = useContext(LanguageContext)
 
 
   return (
@@ -15,7 +14,7 @@ function Card(props) {
     <div className="card-item" >
       <div className="card-picture" style={{backgroundImage: `url(${props.product.slike[0].path})`}} ></div>
       <div className="card-info-wrapper">
-        <p>{props.product.name.hr}</p>
+        <p>{language === "en" ? props.product.name.en : props.product.name.hr}</p>
       </div>
     </div>
     </Link>

@@ -1,60 +1,45 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import Card from '../components/Card'
 import '../App.css'
 
-function AbonosUkras() {
-  const [isOpen, setIsopen] = useState(false)
-  const [name, setName] = useState("")
-  const [materijali, setMaterijali] = useState("")
-  const [slike, setSlike] = useState("")
-  const [opis, setOpis] = useState("")
+function UnikatUkras() {
+  const [products, setProducts] = useState(null)
+ 
+  useEffect(()=>{
+    fetch('http://localhost:5000/products', {
+      method: 'POST', // or 'PUT'
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({query:"abonosUkras"}),
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log(data)
+      setProducts(data)
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+    });
+  },[])
 
 
-  const toggleForm = () => setIsopen(!isOpen)
-
-
-
-  const sendData = e => {
-    e.preventDefault()
-    const formData = new FormData()
-    for (let i = 0; i < slike.length; i++) {
-      formData.append("images", slike[i])
-    }
-    formData.append("name", name)
-    formData.append("materijali", materijali)
-    formData.append("opis", opis)
-    console.log(formData)
-    // const res = axios.post('http://localhost:5000/posts/add', formData, {
-    //     headers: {
-    //         'Content-Type': 'multipart/form/data'
-    //     }
-    // }).then(response => setPosts(response.data))
-    //     .catch(error => console.log(error))
-
-  }
-
-
+ 
 
   return (
     <>
-      <button className="open-btn" onClick={toggleForm}>Dodaj</button>
-      {isOpen &&
-        <form className="form" onSubmit={sendData}>
-          <button className="close-btn" onClick={toggleForm}>&#10005;</button>
-          <div className="all-inputs">
-            <input className="input" placeholder="Ime proizvoda" onChange={e => setName(e.target.value)} />
-            <input className="input" placeholder="Materijali" onChange={e => setMaterijali(e.target.value)} />
-            <input className="input" multiple type="file" onChange={(e) => setSlike(e.target.files)} />
-            <textarea className="input" placeholder="Opis" onChange={e => setOpis(e.target.value)} />
-            <button className="form-button" type="submit">SPREMI</button>
-          </div>
-        </form>
-      }
-      <div className="minus-padding">
-        abonos ukrasi lista
-
-    </div>
+     
+      <div className="gallery">
+        {products&& products.map(product=>{
+          return (
+            <div className="card-wrapper">
+              <Card product={product} key={product._id}/>
+            </div>
+          )
+        })}
+      </div>
     </>
   );
 }
 
-export default AbonosUkras;
+export default UnikatUkras;

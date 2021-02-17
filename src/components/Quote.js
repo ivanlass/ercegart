@@ -1,13 +1,18 @@
+import React, {useContext} from 'react'
 import '../App.css';
-
-
+import {LanguageContext} from '../LanguageContext'
 
 
 function Quote() {
+    const [language, setLanguage] = useContext(LanguageContext)
+
     return (
         <>
             <div className="quote-component">
-                <p className="quote-txt">"Sreća - to je biti s prirodom, gledati je i s njom govoriti."</p>
+                <p className="quote-txt">{language === "en" ? `"Happiness is to be with nature, to look at it and talk to it."`
+                :
+                `"Sreća - to je biti s prirodom, gledati je i s njom govoriti."`    
+            }</p>
                 <p className="pisac">- Lav Nikolajevič Tolstoj</p>
             </div>
             <svg className="drvece" viewBox="0 0 1440 498" fill="none" xmlns="http://www.w3.org/2000/svg">

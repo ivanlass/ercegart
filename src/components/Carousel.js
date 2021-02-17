@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 import Carousel from 'react-bootstrap/Carousel'
-import patio from '../images/patio.jpg'
 import "../Card.css"
 
 function Carousels(props) {

@@ -1,13 +1,13 @@
 import './App.css';
 import Navigation from './components/Navigation'
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import {LanguageProvider} from './LanguageContext'
 
 function App() {
   return (
     <div className="App">
-      <ToastContainer/>
-      <Navigation />
+      <LanguageProvider>
+        <Navigation />
+      </LanguageProvider>
 
     </div>
   );

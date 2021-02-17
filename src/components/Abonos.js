@@ -1,12 +1,16 @@
-
+import React, {useContext} from 'react'
 import '../App.css';
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import astal from '../images/astal.png'
 import {Link} from "react-router-dom";
+import {LanguageContext} from '../LanguageContext'
+
 
 function Abonos() {
+    const [language, setLanguage] = useContext(LanguageContext)
+
     return (
         <>
             <div className="aboutus abonos-component">
@@ -20,19 +24,25 @@ function Abonos() {
                         </Col>
                         <Col>
                             <div className="abonos">
-                                <h1 className="title-big">O Abonosu</h1>
-                                <p className="about-txt abonos-about">Abonos drvo je drvo hrasta lužnjaka (crni hrast, crni dub) koje je nekoliko tisuća godina sazrijevalo u mulju rijeka bez prisustva zraka mijenjajući svoja svojstva. Promjene se dešavaju pod utjecajem minerala u vodi, čineći da drvo postupno mijenja svoju boju od svijetle do bakrenosmeđe i crne. Potpuno crno drvo je staro oko 7-8 tisuća godina. Abonos drvo osim same boje, tijekom vremena mijenja i svoju tvrdoću, tako da poprima do 40% veću tvrdoću nego što je imalo prije preobrazbe u abonos. Nakon vađenja iz svog tisućljetnog staništa s dna korita rijeke, uz pomoć specijalno obučenih ronilaca za rad u mutnim vodama, deblo abonosa potrebno je strpljivo i brižno sušiti jednu godinu, kako se naglom dehidracijom ne bi raspalo u prah.
-
-                                    Nalazišta abonosa su i u svijetu vrlo rijetka. U našim krajevima nalaze se u starim i sadašnjim koritima rijeka Save, Vrbasa, Bosne, Drine, Krapine i Drave.
-                        </p>
+                                <h1 className="title-big">{language === "en" ? "About abonos" : "O abonosu"}</h1>
+                                <p className="about-txt abonos-about">
+                                   {language === "en" ? ` Abonos drvo je drvo hrasta lužnjaka (crni hrast, crni dub) koje je nekoliko tisuća godina sazrijevalo u mulju rijeka bez prisustva zraka mijenjajući svoja svojstva. 
+                                Promjene se dešavaju pod utjecajem minerala u vodi, čineći da drvo postupno mijenja svoju boju od svijetle do bakrenosmeđe i crne. Potpuno crno drvo je staro oko 7-8 tisuća godina. Abonos drvo osim same boje, tijekom vremena mijenja i svoju tvrdoću, tako da poprima do 40% veću tvrdoću nego što je imalo prije preobrazbe u abonos. Nakon vađenja iz svog tisućljetnog staništa s dna korita rijeke, uz pomoć specijalno obučenih ronilaca za rad u mutnim vodama, deblo abonosa potrebno je strpljivo i brižno sušiti jednu godinu, kako se naglom dehidracijom ne bi raspalo u prah.
+                                    Nalazišta abonosa su i u svijetu vrlo rijetka. U našim krajevima nalaze se u starim i sadašnjim koritima rijeka Save, Vrbasa, Bosne, Drine, Krapine i Drave.`
+                                :
+                                `The Abonos tree is a pedunculate oak tree (black oak, black oak) that has matured for several thousand years in river mud without the presence of air changing its properties.
+                                Changes occur under the influence of minerals in the water, making the wood gradually change its color from light to copper-brown and black. Completely abonos is about 7-8 thousand years old. Abonos wood, in addition to the color itself, changes its hardness over time, so that it takes up to 40% higher hardness than it had before the transformation into abonos. After being extracted from its millennial habitat from the bottom of the riverbed, with the help of specially trained divers to work in muddy waters, the abonos trunk needs to be patiently and carefully dried for one year so that it does not disintegrate into dust by sudden dehydration.
+                                    Abonos deposits are also very rare in the world. In our region, they are located in the old and current riverbeds of the Sava, Vrbas, Bosnia, Drina, Krapina and Drava.`
+                                }
+                                </p>
                             </div>
                         </Col>
                     </Row>
                     <Link to="/furniture">
-                    <button className="btn-seemore">SEE GALLERY</button>
+                    <button className="btn-seemore">{language === "en" ? "SEE GALLERY" : "GALERIJA"}</button>
                     </Link>
                 </Container>
-                
+
             </div>
             {window.innerWidth > 400 ?
                 <svg className="brdo" viewBox="0 0 1440 405" fill="none" xmlns="http://www.w3.org/2000/svg">
