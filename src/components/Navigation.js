@@ -14,7 +14,6 @@ import {
 } from "react-router-dom";
 import Home from '../pages/Home'
 import AbonosStolovi from '../pages/AbonosStolovi'
-import Contact from '../pages/Contact';
 import Product from '../pages/Product';
 import Separator from '../components/Separator'
 import SeparatorUnikatniNamjestaj from '../components/SeparatorUnikatniNamjestaj'
@@ -46,9 +45,8 @@ function Navigation() {
               <Nav.Link ><Link className="navbar-nav nav-link" to="/abonos">Abonos</Link></Nav.Link>
               <Nav.Link ><Link className="navbar-nav nav-link" to="/unikatni">{language === "en" ? "Unique wooden furniture": "Unikatni drveni namještaj"}</Link></Nav.Link>
               <Nav.Link ><Link className="navbar-nav nav-link" to="/slike">{language === "en" ? "Paintings": "Umjetničke slike"}</Link></Nav.Link>
-              <Nav.Link ><Link className="navbar-nav nav-link" to="/contact">{language === "en" ? "Contact": "Kontakt"}</Link></Nav.Link>
-              {language === "hr" && <Nav.Link onClick={()=> setLanguage("en")}><a className="navbar-nav nav-link language"><img src={uk} style={{width:"24px", marginRight:"5px"}}/>ENG</a></Nav.Link>}
-              {language === "en" && <Nav.Link onClick={()=> setLanguage("hr")}><a className="navbar-nav nav-link language"><img src={hr} style={{width:"24px", marginRight:"5px"}}/>HR</a></Nav.Link>}
+              {language === "hr" && <Nav.Link style={{display:"flex", justifyContent:"center"}} onClick={()=> setLanguage("en")}><a className="navbar-nav nav-link language"><img src={uk} style={{width:"24px", marginRight:"5px"}}/>ENG</a></Nav.Link>}
+              {language === "en" && <Nav.Link style={{display:"flex", justifyContent:"center"}} onClick={()=> setLanguage("hr")}><a className="navbar-nav nav-link language"><img src={hr} style={{width:"24px", marginRight:"5px"}}/>HR</a></Nav.Link>}
             </Nav>
           </Navbar.Collapse>
         </Navbar>
@@ -125,9 +123,7 @@ function Navigation() {
 
 
 
-          <Route path="/contact">
-            <Contact />
-          </Route>
+      
 
           <Route path="/furniture/:id">
             <Product />

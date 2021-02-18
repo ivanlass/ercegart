@@ -11,7 +11,6 @@ function Home() {
       <Abonos />
       <Quote />
       <Aboutus />
-
     </div>
   );
 }

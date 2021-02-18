@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.41ca34fa.chunk.css",
+    "main.js": "/static/js/main.060c82af.chunk.js",
+    "main.js.map": "/static/js/main.060c82af.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.fd9b067d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.fd9b067d.js.map",
+    "static/css/2.aaec8f3d.chunk.css": "/static/css/2.aaec8f3d.chunk.css",
+    "static/js/2.c557c9cb.chunk.js": "/static/js/2.c557c9cb.chunk.js",
+    "static/js/2.c557c9cb.chunk.js.map": "/static/js/2.c557c9cb.chunk.js.map",
+    "static/js/3.f1e6a400.chunk.js": "/static/js/3.f1e6a400.chunk.js",
+    "static/js/3.f1e6a400.chunk.js.map": "/static/js/3.f1e6a400.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.aaec8f3d.chunk.css.map": "/static/css/2.aaec8f3d.chunk.css.map",
+    "static/css/main.41ca34fa.chunk.css.map": "/static/css/main.41ca34fa.chunk.css.map",
+    "static/js/2.c557c9cb.chunk.js.LICENSE.txt": "/static/js/2.c557c9cb.chunk.js.LICENSE.txt",
+    "static/media/abonosOstalo.b3336bb1.png": "/static/media/abonosOstalo.b3336bb1.png",
+    "static/media/astal.932223af.png": "/static/media/astal.932223af.png",
+    "static/media/App.css": "/static/media/hero.be8d7491.jpg",
+    "static/media/hr.bb42b5c9.svg": "/static/media/hr.bb42b5c9.svg",
+    "static/media/logo.ba4d3406.png": "/static/media/logo.ba4d3406.png",
+    "static/media/onama.b8c3ee64.jpg": "/static/media/onama.b8c3ee64.jpg",
+    "static/media/stolAbonos.93f97c01.jpg": "/static/media/stolAbonos.93f97c01.jpg",
+    "static/media/uk.2d19fed4.svg": "/static/media/uk.2d19fed4.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fd9b067d.js",
+    "static/css/2.aaec8f3d.chunk.css",
+    "static/js/2.c557c9cb.chunk.js",
+    "static/css/main.41ca34fa.chunk.css",
+    "static/js/main.060c82af.chunk.js"
+  ]
+}

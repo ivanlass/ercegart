@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Card from '../components/Card'
 import '../App.css'
+import HeroSm from '../components/HeroSm'
 
 function OstaleSlike() {
   const [products, setProducts] = useState(null)
@@ -29,7 +30,7 @@ function OstaleSlike() {
 
   return (
     <>
-     
+     <HeroSm />
       <div className="gallery">
         {products&& products.map(product=>{
           return (

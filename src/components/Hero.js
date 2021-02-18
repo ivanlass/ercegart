@@ -3,6 +3,7 @@ import '../App.css';
 import logo from '../images/logo.png'
 import {Link} from "react-router-dom";
 import {LanguageContext} from '../LanguageContext'
+import Typed from 'react-typed';
 
 
 

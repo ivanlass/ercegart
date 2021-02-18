@@ -253,7 +253,7 @@ body, html {
   letter-spacing: 5px;
   font-family: 'Stoke', serif;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .about {
@@ -289,7 +289,8 @@ body, html {
 
 /* QUOTE ******************************************************************************* */
 .quote-component {
-
+  width: 100%;
+  background: rgb(255, 255, 255);
 }
 
 .quote-txt {
@@ -307,7 +308,7 @@ body, html {
 
 
 .drvece {
-  margin-bottom: -25px;
+  margin-bottom: -16px;
 }
 
 
@@ -371,11 +372,48 @@ a:hover {
   margin-top: 20px;
 }
 
+
 .separator-label {
-  background-color: rgba(0, 0, 0, 0.179);
+  background-color: rgba(0, 0, 0, 0.59);
+  font-family: 'Sulphur Point', sans-serif;
 }
 
 
+
+/* FOOTER ************************************************** */
+.footer {
+  color: rgb(175, 175, 175);
+  background-color: #1E1F1B;
+  padding: 120px 0;
+}
+
+.footer-label {
+  background: -webkit-linear-gradient(#47BCEE, #207EA6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+
+
+.footer-item {
+  border-bottom: 1px solid #4f4f4b;
+  border-top: 1px solid #1E1F1B;
+  padding: 10px;
+  display: inline-block;
+  width: 200px;
+  transition: all 0.5s ease;
+}
+
+.footer-placeholder {
+  color: #525251;
+}
+
+.footer-item:hover {
+  width: 300px;
+  border-top: 1px solid #4f4f4b;
+}
 
 
 
@@ -407,15 +445,12 @@ a:hover {
   padding-top: 140px;
 }
 
-.quote-component {
-  margin-bottom: 170px;
-}
 }
 
 
 @media only screen and (max-width: 771px) {
   .aboutus {
-    height: 800px;
+    height: 900px;
     padding: 60px 20px;
   }
 
@@ -458,7 +493,7 @@ a:hover {
   }
 
   .separator-first {
-    width: 100%;
+    width: 300px;
     height: 300px;
     margin-top: 20px;
   }  
@@ -487,7 +522,6 @@ a:hover {
   }
 
   .brdo {
-    margin-top: 16px;
   }
 
   .img-about {
@@ -633,5 +667,6 @@ a:hover {
     opacity: 1;
   }
 }
+
 
 

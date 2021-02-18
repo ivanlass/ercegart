@@ -7,17 +7,19 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import '../App.css'
 import {LanguageContext} from '../LanguageContext'
-
+import HeroSm from './HeroSm'
 
 function SeparatorUnikatniNamjestaj(props) {
   const [language, setLanguage] = useContext(LanguageContext)
 
 
   return (
+    <>
+    <HeroSm />
     <div className="separator-component">
         <Container fluid>
             <Row>
-                <Col xs={12} md={6} xl={3}>
+                <Col xs={12} md={6} xl={3} style={{display:"flex", justifyContent:"center"}}>
         <Link to={props.first}>
           <div className="separator-first" style={{backgroundImage: `url(${stolAbonos})`}}>
               <p className="separator-label">{language === "en" ? "Garden furniture": "Vrtne garniture"}</p>
@@ -25,7 +27,7 @@ function SeparatorUnikatniNamjestaj(props) {
         </Link>
                 
                 </Col>
-<Col xs={12} md={6} xl={3}>
+<Col xs={12} md={6} xl={3} style={{display:"flex", justifyContent:"center"}}>
         <Link to={props.second}>
           <div className="separator-first" style={{backgroundImage: `url(${stolAbonos})`}}>
               <p className="separator-label">{language === "en" ? "Dining tables": "Blagovaonski stolovi"}</p>
@@ -34,7 +36,7 @@ function SeparatorUnikatniNamjestaj(props) {
 
 </Col>
 
-<Col xs={12} md={6} xl={3}>
+<Col xs={12} md={6} xl={3} style={{display:"flex", justifyContent:"center"}}>
         <Link to={props.third}>
           <div className="separator-first" style={{backgroundImage: `url(${abonosOstalo})`}}>
               <p className="separator-label">{language === "en" ? "Benches and chairs": "Klupe i stolice"}</p>
@@ -43,7 +45,7 @@ function SeparatorUnikatniNamjestaj(props) {
 
 </Col>
 
-        <Col xs={12} md={6} xl={3}>
+        <Col xs={12} md={6} xl={3} style={{display:"flex", justifyContent:"center"}}>
         <Link to={props.fourth}>
           <div className="separator-first" style={{backgroundImage: `url(${abonosOstalo})`}}>
               <p className="separator-label">{language === "en" ? "Other unique decorations": "Ostali unikatni ukrasi"}</p>
@@ -55,7 +57,7 @@ function SeparatorUnikatniNamjestaj(props) {
         </Container>
        
       </div>
-
+</>
   );
 }
 

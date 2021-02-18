@@ -26,13 +26,27 @@ function Abonos() {
                             <div className="abonos">
                                 <h1 className="title-big">{language === "en" ? "About abonos" : "O abonosu"}</h1>
                                 <p className="about-txt abonos-about">
-                                   {language === "en" ? ` Abonos drvo je drvo hrasta lužnjaka (crni hrast, crni dub) koje je nekoliko tisuća godina sazrijevalo u mulju rijeka bez prisustva zraka mijenjajući svoja svojstva. 
-                                Promjene se dešavaju pod utjecajem minerala u vodi, čineći da drvo postupno mijenja svoju boju od svijetle do bakrenosmeđe i crne. Potpuno crno drvo je staro oko 7-8 tisuća godina. Abonos drvo osim same boje, tijekom vremena mijenja i svoju tvrdoću, tako da poprima do 40% veću tvrdoću nego što je imalo prije preobrazbe u abonos. Nakon vađenja iz svog tisućljetnog staništa s dna korita rijeke, uz pomoć specijalno obučenih ronilaca za rad u mutnim vodama, deblo abonosa potrebno je strpljivo i brižno sušiti jednu godinu, kako se naglom dehidracijom ne bi raspalo u prah.
-                                    Nalazišta abonosa su i u svijetu vrlo rijetka. U našim krajevima nalaze se u starim i sadašnjim koritima rijeka Save, Vrbasa, Bosne, Drine, Krapine i Drave.`
+                                   {language === "en" ? `The abonos tree is a pedunculate oak tree (black oak, black oak) that has matured 
+                                   in river mud for several thousand years without the presence of air changing its properties. 
+                                   Changes occur under the influence of minerals in the water, making the wood gradually change its color 
+                                   from light to copper-brown and black. Completely abonos is about 7-8 thousand years old. abonos wood, 
+                                   in addition to the color itself, changes its hardness over time, so that it takes up to 40% higher 
+                                   hardness than it had before the transformation into abonos. After being extracted from its millennial 
+                                   habitat from the bottom of the riverbed, with the help of specially trained divers to work in muddy 
+                                   waters, the abonos trunk needs to be patiently and carefully dried for one year so that it does not 
+                                   disintegrate into dust by sudden dehydration. abonos deposits are also very rare in the world. 
+                                   In our region, they are located in the old and current riverbeds of the Sava, Vrbas, Bosna, Drina, 
+                                   Krapina and Drava rivers.`
                                 :
-                                `The Abonos tree is a pedunculate oak tree (black oak, black oak) that has matured for several thousand years in river mud without the presence of air changing its properties.
-                                Changes occur under the influence of minerals in the water, making the wood gradually change its color from light to copper-brown and black. Completely abonos is about 7-8 thousand years old. Abonos wood, in addition to the color itself, changes its hardness over time, so that it takes up to 40% higher hardness than it had before the transformation into abonos. After being extracted from its millennial habitat from the bottom of the riverbed, with the help of specially trained divers to work in muddy waters, the abonos trunk needs to be patiently and carefully dried for one year so that it does not disintegrate into dust by sudden dehydration.
-                                    Abonos deposits are also very rare in the world. In our region, they are located in the old and current riverbeds of the Sava, Vrbas, Bosnia, Drina, Krapina and Drava.`
+                                ` Abonos drvo je drvo hrasta lužnjaka (crni hrast, crni dub) koje je nekoliko tisuća godina sazrijevalo u 
+                                mulju rijeka bez prisustva zraka mijenjajući svoja svojstva. Promjene se dešavaju pod utjecajem minerala u 
+                                vodi, čineći da drvo postupno mijenja svoju boju od svijetle do bakrenosmeđe i crne. 
+                                Potpuno crno drvo je staro oko 7-8 tisuća godina. Abonos drvo osim same boje, tijekom vremena mijenja i 
+                                svoju tvrdoću, tako da poprima do 40% veću tvrdoću nego što je imalo prije preobrazbe u abonos. 
+                                Nakon vađenja iz svog tisućljetnog staništa s dna korita rijeke, uz pomoć specijalno obučenih ronilaca za 
+                                rad u mutnim vodama, deblo abonosa potrebno je strpljivo i brižno sušiti jednu godinu, 
+                                kako se naglom dehidracijom ne bi raspalo u prah. Nalazišta abonosa su i u svijetu vrlo rijetka. 
+                                U našim krajevima nalaze se u starim i sadašnjim koritima rijeka Save, Vrbasa, Bosne, Drine, Krapine i Drave.`
                                 }
                                 </p>
                             </div>
@@ -44,7 +58,7 @@ function Abonos() {
                 </Container>
 
             </div>
-            {window.innerWidth > 400 ?
+            {/* {window.innerWidth > 400 ?
                 <svg className="brdo" viewBox="0 0 1440 405" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1439 42.5H-1V276.243C199.996 -39.9597 340.809 439.297 397.638 276.243C454.468 113.189 684.906 77.973 880.806 151.28C1076.71 224.588 1110.37 212.807 1258.44 261.653C1406.5 310.5 1435.83 424.374 1439 401V42.5Z" fill="#666666" fill-opacity="0.1" />
                     <path d="M0 3H1440V204.044C1239 -67.9242 1098.19 344.288 1041.36 204.044C984.532 63.8001 754.094 33.5106 558.194 96.5628C362.294 159.615 257.962 131.474 180.563 204.044C103.164 276.614 84.6981 132.013 0 225V3Z" fill="#242424" fill-opacity="0.3" />
@@ -57,7 +71,7 @@ function Abonos() {
                     <path d="M776 0H0V31.793C151.419 26.6962 274.798 46.7399 316.058 23.7724C357.318 0.804781 407.845 26.1951 475.196 14.796C542.547 3.39691 631.603 21.426 678.697 45.4885C738.83 76.2136 774.293 67.6213 776 64.442V0Z" fill="#242424" />
                 </svg>
 
-            }
+            } */}
         </>
     );
 }

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Card from '../components/Card'
 import '../App.css'
+import HeroSm from '../components/HeroSm'
 
 function UnikatUkras() {
   const [products, setProducts] = useState(null)
@@ -28,7 +29,7 @@ function UnikatUkras() {
 
   return (
     <>
-     
+      <HeroSm />
       <div className="gallery">
         {products&& products.map(product=>{
           return (

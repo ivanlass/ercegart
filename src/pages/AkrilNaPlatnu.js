@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Card from '../components/Card'
 import '../App.css'
+import HeroSm from '../components/HeroSm'
 
 function AkrilNaPlatnu() {
   const [products, setProducts] = useState(null)
@@ -29,7 +30,7 @@ function AkrilNaPlatnu() {
 
   return (
     <>
-    
+      <HeroSm />
       <div className="gallery">
         {products&& products.map(product=>{
           return (
