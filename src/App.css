@@ -370,12 +370,18 @@ a:hover {
   border: 1px solid #45B8E9;
   border-radius: 5px;
   margin-top: 20px;
+  overflow: hidden;
 }
 
 
 .separator-label {
   background-color: rgba(0, 0, 0, 0.59);
   font-family: 'Sulphur Point', sans-serif;
+  transition: all .4s cubic-bezier(1, 0.03, 0.51, 0.85);
+}
+
+.separator-first:hover .separator-label {
+  padding:120px 0;
 }
 
 
@@ -384,7 +390,7 @@ a:hover {
 .footer {
   color: rgb(175, 175, 175);
   background-color: #1E1F1B;
-  padding: 120px 0;
+  padding: 10px 0;
 }
 
 .footer-label {
