@@ -6,35 +6,35 @@ import HeroSm from '../components/HeroSm'
 function AbonosStolovi() {
   const [products, setProducts] = useState(null)
 
-  useEffect(()=>{
+  useEffect(() => {
     fetch('https://ercegart.herokuapp.com/products', {
       method: 'POST', // or 'PUT'
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({query:"abonosStolovi"}),
+      body: JSON.stringify({ query: "abonosStolovi" }),
     })
-    .then(response => response.json())
-    .then(data => {
+      .then(response => response.json())
+      .then(data => {
 
-      setProducts(data)
-    })
-    .catch((error) => {
-      console.error('Error:', error);
-    });
-  },[])
+        setProducts(data)
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
+  }, [])
 
 
-  
+
 
   return (
     <>
-    <HeroSm />
+      <HeroSm />
       <div className="gallery">
-        {products&& products.map(product=>{
+        {products && products.map(product => {
           return (
-            <div className="card-wrapper">
-              <Card product={product} key={product._id}/>
+            <div className="card-wrapper" key={product._id}>
+              <Card product={product} />
             </div>
           )
         })}

@@ -1,9 +1,9 @@
-import React, {useContext} from 'react'
-import {Link} from "react-router-dom";
-import stolAbonos from '../images/stolAbonos.jpg'
-import abonosOstalo from '../images/abonosOstalo.png'
+import React, { useContext } from 'react'
+import { Link } from "react-router-dom";
+import abonosUkras from '../images/abonosUkras.jpg'
+import abonosStol from '../images/abonosStol.jpg'
 import '../App.css'
-import {LanguageContext} from '../LanguageContext'
+import { LanguageContext } from '../LanguageContext'
 import HeroSm from './HeroSm';
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
@@ -16,28 +16,28 @@ function Separator(props) {
 
   return (
     <>
-        <HeroSm />
-    <div className="separator-component abonos-separator">
-    <Container fluid>
-      <Row style={{justifyContent:"space-around"}}>
-        <Col xs={12} md={4} xl={4} className="separator-item" >
-        <Link to={props.first}>
-          <div className="separator-first" style={{backgroundImage: `url(${stolAbonos})`}}>
-              <p className="separator-label">{language === "en" ? "Tables": "Stolovi"}</p>
-          </div>
-        </Link>
-        </Col>
-        <Col xs={12} md={4} xl={4} className="separator-item">
-        <Link to={props.second}>
-          <div className="separator-first" style={{backgroundImage: `url(${abonosOstalo})`}}>
-              <p className="separator-label">{language === "en" ? "Unique decorations": "Unikatni ukrasi"}</p>
-          </div>
-        </Link>
-        </Col>
-        </Row>
+      <HeroSm />
+      <div className="separator-component abonos-separator">
+        <Container fluid>
+          <Row style={{ justifyContent: "space-around" }}>
+            <Col xs={12} md={4} xl={4} className="separator-item" >
+              <Link to={props.first}>
+                <div className="separator-first abonos-stol-slika" style={{ backgroundImage: `url(${abonosStol})` }}>
+                  <p className="separator-label">{language === "en" ? "Tables" : "Stolovi"}</p>
+                </div>
+              </Link>
+            </Col>
+            <Col xs={12} md={4} xl={4} className="separator-item">
+              <Link to={props.second}>
+                <div className="separator-first abonos-stol-slika" style={{ backgroundImage: `url(${abonosUkras})` }}>
+                  <p className="separator-label">{language === "en" ? "Unique decorations and jewelry" : "Unikatni ukrasi i nakit"}</p>
+                </div>
+              </Link>
+            </Col>
+          </Row>
         </Container>
       </div>
-</>
+    </>
   );
 }
 

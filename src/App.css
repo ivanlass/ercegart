@@ -169,7 +169,7 @@ body, html {
 .hero {
   margin-top: -70px;
   background: url(./images/hero.jpg);
-  height: 90vh;
+  height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -261,7 +261,8 @@ body, html {
 }
 
 .about-txt {
-  font-size: 16px;
+  font-size: 18px;
+  font-family: 'Sulphur Point', sans-serif;
 }
 
 .img-about {
@@ -289,19 +290,22 @@ body, html {
 
 /* QUOTE ******************************************************************************* */
 .quote-component {
-  width: 100%;
-  background: rgb(255, 255, 255);
+  height: 100%;
+  background: rgb(160, 160, 160);
+  margin-bottom: -10px;
 }
 
 .quote-txt {
-  font-size: 30px;
+  font-size: 26px;
+  color: white;
   font-family: 'Stoke', serif;
   position: relative;
   z-index: 1;
 }
 
 .pisac {
-  font-size: 20px;
+  color: white;
+  font-size: 17px;
   font-family: 'Stoke', serif;
   font-weight: bold;
 }
@@ -309,9 +313,12 @@ body, html {
 
 .drvece {
   margin-bottom: -16px;
+  margin-top: -240px;
 }
 
-
+.abonos-stol-slika {
+  background-position: right;
+}
 
 
 /* ABONOs ******************************************************************** */
@@ -319,13 +326,20 @@ body, html {
   height: 700px;
 }
 .abonos {
-  text-align: right;
+  text-align: left;
 }
 
 .abonos-img {
+  
 margin-left: -50px;
+border-radius: 10px;
+margin-top: 50px;
 }
 
+
+.klupe {
+  background-position: bottom;
+}
 
 
 /* CONTACT *************************************************************** */
@@ -367,8 +381,7 @@ a:hover {
   background-size: cover;
   font-size: 40px;
   color: white;
-  border: 1px solid #45B8E9;
-  border-radius: 5px;
+  border-radius: 10px;
   margin-top: 20px;
   overflow: hidden;
 }
@@ -376,12 +389,15 @@ a:hover {
 
 .separator-label {
   background-color: rgba(0, 0, 0, 0.59);
+  font-size: 27px;
   font-family: 'Sulphur Point', sans-serif;
   transition: all .4s cubic-bezier(1, 0.03, 0.51, 0.85);
 }
 
 .separator-first:hover .separator-label {
-  padding:120px 0;
+  padding:140px 0;
+  color:#45B8E9;
+  background-color: rgba(0, 0, 0, 0.79);
 }
 
 
@@ -390,15 +406,15 @@ a:hover {
 .footer {
   color: rgb(175, 175, 175);
   background-color: #1E1F1B;
-  padding: 10px 0;
+  padding: 200px 0;
 }
 
 .footer-label {
   background: -webkit-linear-gradient(#47BCEE, #207EA6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 60px;
-  font-weight: bold;
+  font-size: 40px;
+  font-weight: 100;
 }
 
 
@@ -491,6 +507,16 @@ a:hover {
 
 @media only screen and (max-width: 500px) {
 
+  .hero {
+    height: 110vh;
+  }
+
+
+  .footer{
+    padding: 20px 0;
+  }
+
+
   .separator-component{
     flex-direction:column;
     justify-content: space-around;
@@ -527,7 +553,8 @@ a:hover {
     margin-left: -50px;
   }
 
-  .brdo {
+  .quote-component {
+    margin-bottom: 10px;
   }
 
   .img-about {
@@ -540,19 +567,29 @@ a:hover {
     margin-left: 150px;
   }
 
-  .abonos-component {
-    margin-top: -70px;
+  .about-component {
+    margin-top: 0px;
+    height: 750px!important;
   }
 
   .abonos-img {
     width: 250px!important;
-    margin-left: 20px;
-    margin-bottom: 40px;
-
+    margin-left: 0px;
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
 
   .abonos-about {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+  }
+
+  .drvece {
+    margin-bottom: 10px;
+    margin-top: -20px;
+  }
+
+  .footer {
+    padding-top:80px ;
   }
 }
 

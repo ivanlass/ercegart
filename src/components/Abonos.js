@@ -1,11 +1,11 @@
-import React, {useContext} from 'react'
+import React, { useContext } from 'react'
 import '../App.css';
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import astal from '../images/astal.png'
-import {Link} from "react-router-dom";
-import {LanguageContext} from '../LanguageContext'
+import astal from '../images/astal.jpg'
+import { Link } from "react-router-dom";
+import { LanguageContext } from '../LanguageContext'
 
 
 function Abonos() {
@@ -19,14 +19,14 @@ function Abonos() {
 
                         <Col>
                             <div className="">
-                                <img className="abonos-img" src={astal} alt="logo" style={{ width: 500 }} />
+                                <img className="abonos-img" src={astal} alt="logo" style={{ width: 370 }} />
                             </div>
                         </Col>
                         <Col>
                             <div className="abonos">
-                                <h1 className="title-big">{language === "en" ? "About abonos" : "O abonosu"}</h1>
+                                <h1 className="title-big">{language === "en" ? "About Abonos" : "O Abonosu"}</h1>
                                 <p className="about-txt abonos-about">
-                                   {language === "en" ? `The abonos tree is a pedunculate oak tree (black oak, black oak) that has matured 
+                                    {language === "en" ? `The Abonos ( black oak ) tree is a pedunculate oak tree, Abonos that has matured 
                                    in river mud for several thousand years without the presence of air changing its properties. 
                                    Changes occur under the influence of minerals in the water, making the wood gradually change its color 
                                    from light to copper-brown and black. Completely abonos is about 7-8 thousand years old. abonos wood, 
@@ -37,8 +37,8 @@ function Abonos() {
                                    disintegrate into dust by sudden dehydration. abonos deposits are also very rare in the world. 
                                    In our region, they are located in the old and current riverbeds of the Sava, Vrbas, Bosna, Drina, 
                                    Krapina and Drava rivers.`
-                                :
-                                ` Abonos drvo je drvo hrasta lužnjaka (crni hrast, crni dub) koje je nekoliko tisuća godina sazrijevalo u 
+                                        :
+                                        ` Abonos drvo je drvo hrasta lužnjaka (crni hrast, crni dub) koje je nekoliko tisuća godina sazrijevalo u 
                                 mulju rijeka bez prisustva zraka mijenjajući svoja svojstva. Promjene se dešavaju pod utjecajem minerala u 
                                 vodi, čineći da drvo postupno mijenja svoju boju od svijetle do bakrenosmeđe i crne. 
                                 Potpuno crno drvo je staro oko 7-8 tisuća godina. Abonos drvo osim same boje, tijekom vremena mijenja i 
@@ -47,13 +47,13 @@ function Abonos() {
                                 rad u mutnim vodama, deblo abonosa potrebno je strpljivo i brižno sušiti jednu godinu, 
                                 kako se naglom dehidracijom ne bi raspalo u prah. Nalazišta abonosa su i u svijetu vrlo rijetka. 
                                 U našim krajevima nalaze se u starim i sadašnjim koritima rijeka Save, Vrbasa, Bosne, Drine, Krapine i Drave.`
-                                }
+                                    }
                                 </p>
                             </div>
                         </Col>
                     </Row>
-                    <Link to="/furniture">
-                    <button className="btn-seemore">{language === "en" ? "SEE GALLERY" : "GALERIJA"}</button>
+                    <Link to="/abonos">
+                        <button className="btn-seemore">{language === "en" ? "SEE GALLERY" : "GALERIJA"}</button>
                     </Link>
                 </Container>
 
