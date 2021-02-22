@@ -10,15 +10,11 @@ body, html {
     margin:40px 20px;
     padding: 40px 20px;
     border-radius: 3px;
-    border: 1px solid #45B8E9;
     background: #272824;
     transition: all 0.2s ease;
     cursor: pointer;
 }
 
-.card-item:hover {
-    box-shadow: 0px 10px 60px -40px #45B8E9;
-}
 
 
 
@@ -26,7 +22,6 @@ body, html {
     height: 200px;
     background-repeat: no-repeat;
     background-size: cover;
-    transform: skew(0deg, -7deg);
     transition: all 0.2s ease;
 }
 
@@ -70,7 +65,7 @@ body, html {
 
 .carousel-img {
     height: 500px!important;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .product-info-sm{
