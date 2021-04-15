@@ -112,7 +112,6 @@ body, html {
         min-width: 300px;
         height: 350px;
         border-radius: 3px;
-        border: 1px solid #45B8E9;
         background: #272824;
         transition: all 0.2s ease;
         cursor: pointer;

@@ -376,6 +376,7 @@ a:hover {
 }
 
 .separator-first {
+  border: none;
   height: 300px;
   width: 300px;
   background-size: cover;
