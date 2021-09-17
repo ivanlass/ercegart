@@ -23,7 +23,7 @@ function Hero() {
         }
             <p className="">- Osho</p>
             </p>
-        <Link to="/abonos">
+        <Link to="/unikatni">
           <button className="btn-seemore">{language === "en" ? "SEE GALLERY" : "GALERIJA"}</button>
         </Link>
       </div>
