@@ -7,7 +7,7 @@ function AkrilNaPlatnu() {
   const [products, setProducts] = useState(null);
 
   useEffect(() => {
-    fetch("https://ercegbackend-c42jv.ondigitalocean.app/products", {
+    fetch("https://ercegartapi.ew.r.appspot.com/products", {
       method: "POST", // or 'PUT'
       headers: {
         "Content-Type": "application/json",

@@ -17,7 +17,7 @@ function Carousels(props) {
         <Carousel.Item>
         <img
             className="d-block w-100 carousel-img"
-            src={slika.path}
+            src={slika.path || slika}
             alt="Second slide"
           />
         </Carousel.Item>

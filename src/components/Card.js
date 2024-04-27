@@ -12,7 +12,7 @@ function Card(props) {
   return (
     <Link to={'/furniture/'+props.product._id}>
     <div className="card-item" >
-      <div className="card-picture" style={{backgroundImage: `url(${props.product.slike[0].path})`}} ></div>
+      <div className="card-picture" style={{backgroundImage: `url(${props.product.slike[0].path || props.product.slike[0]})`}} ></div>
       <div className="card-info-wrapper">
         <p>{language === "en" ? props.product.name.en : props.product.name.hr}</p>
       </div>

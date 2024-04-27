@@ -13,7 +13,7 @@ function Product() {
   let { id } = useParams();
   console.log(id);
   useEffect(() => {
-    fetch("https://ercegbackend-c42jv.ondigitalocean.app/products/findone", {
+    fetch("https://ercegartapi.ew.r.appspot.com/products/findone", {
       method: "POST", // or 'PUT'
       headers: {
         "Content-Type": "application/json",
