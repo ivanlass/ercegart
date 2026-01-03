@@ -13,12 +13,9 @@ import {
   Link
 } from "react-router-dom";
 import Home from '../pages/Home'
-import AbonosStolovi from '../pages/AbonosStolovi'
 import Product from '../pages/Product';
-import Separator from '../components/Separator'
 import SeparatorUnikatniNamjestaj from '../components/SeparatorUnikatniNamjestaj'
 import SeparatorSlike from '../components/SeparatorSlike'
-import AbonosUkras from './AbonosUkras'
 import UnikatneGarniture from '../pages/UnikatneGarniture';
 import UnikatniStolovi from '../pages/UnikatniStolovi';
 import UnikatKlupe from '../pages/UnikatKlupe'
@@ -42,7 +39,6 @@ function Navigation() {
             <Nav className="navigacija">
 
               <Nav.Link ><Link className="navbar-nav nav-link" to="/">Home</Link></Nav.Link>
-              <Nav.Link ><Link className="navbar-nav nav-link" to="/abonos">Abonos</Link></Nav.Link>
               <Nav.Link ><Link className="navbar-nav nav-link" to="/unikatni">{language === "en" ? "Unique wooden furniture": "Unikatni drveni namještaj"}</Link></Nav.Link>
               <Nav.Link ><Link className="navbar-nav nav-link" to="/slike">{language === "en" ? "Paintings": "Umjetničke slike"}</Link></Nav.Link>
               {language === "hr" && <Nav.Link style={{display:"flex", justifyContent:"center"}} onClick={()=> setLanguage("en")}><a className="navbar-nav nav-link language"><img src={uk} style={{width:"24px", marginRight:"5px"}}/>ENG</a></Nav.Link>}
@@ -57,23 +53,6 @@ function Navigation() {
           <Route exact path="/">
             <Home />
           </Route>
-
-          <Route exact path="/abonos">
-            <Separator first="/abonos/stolovi" second="/abonos/ostalo" />
-          </Route>
-
-          <Route path="/abonos/stolovi">
-            <AbonosStolovi />
-          </Route>
-
-          <Route path="/abonos/ostalo">
-            <AbonosUkras />
-          </Route>
-
-
-
-
-
 
           <Route exact path="/unikatni">
             <SeparatorUnikatniNamjestaj

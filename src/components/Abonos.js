@@ -19,41 +19,27 @@ function Abonos() {
 
                         <Col>
                             <div className="">
-                                <img className="abonos-img" src={astal} alt="logo" style={{ width: 370 }} />
+                                <img className="abonos-img" src={astal} alt="logo" style={{ width: '100%', height: '100%', objectFit: "cover" }} />
                             </div>
                         </Col>
                         <Col>
                             <div className="abonos">
-                                <h1 className="title-big">{language === "en" ? "About Abonos" : "O Abonosu"}</h1>
+                                <h1 className="title-big title-abonos">{language === "en" ? "About black poplar" : "O Jagnjedu"}</h1>
                                 <p className="about-txt abonos-about">
-                                    {language === "en" ? `The Abonos ( black oak ) tree is a pedunculate oak tree, Abonos that has matured 
-                                   in river mud for several thousand years without the presence of air changing its properties. 
-                                   Changes occur under the influence of minerals in the water, making the wood gradually change its color 
-                                   from light to copper-brown and black. Completely abonos is about 7-8 thousand years old. abonos wood, 
-                                   in addition to the color itself, changes its hardness over time, so that it takes up to 40% higher 
-                                   hardness than it had before the transformation into abonos. After being extracted from its millennial 
-                                   habitat from the bottom of the riverbed, with the help of specially trained divers to work in muddy 
-                                   waters, the abonos trunk needs to be patiently and carefully dried for one year so that it does not 
-                                   disintegrate into dust by sudden dehydration. abonos deposits are also very rare in the world. 
-                                   In our region, they are located in the old and current riverbeds of the Sava, Vrbas, Bosna, Drina, 
-                                   Krapina and Drava rivers.`
+                                    {language === "en" ? `Black poplar, with its soft grain patterns and live edges, brings a sense of natural calm to every table, along with a story shaped by time itself.
+                                        Its irregular edges and natural tones make each piece truly unique, as if nature itself had signed its work.
+                                        In rustic tables and benches crafted from black poplar, one can feel the warmth of the forest — a balance of raw strength and understated elegance.`
                                         :
-                                        ` Abonos drvo je drvo hrasta lužnjaka (crni hrast, crni dub) koje je nekoliko tisuća godina sazrijevalo u 
-                                mulju rijeka bez prisustva zraka mijenjajući svoja svojstva. Promjene se dešavaju pod utjecajem minerala u 
-                                vodi, čineći da drvo postupno mijenja svoju boju od svijetle do bakrenosmeđe i crne. 
-                                Potpuno crno drvo je staro oko 7-8 tisuća godina. Abonos drvo osim same boje, tijekom vremena mijenja i 
-                                svoju tvrdoću, tako da poprima do 40% veću tvrdoću nego što je imalo prije preobrazbe u abonos. 
-                                Nakon vađenja iz svog tisućljetnog staništa s dna korita rijeke, uz pomoć specijalno obučenih ronilaca za 
-                                rad u mutnim vodama, deblo abonosa potrebno je strpljivo i brižno sušiti jednu godinu, 
-                                kako se naglom dehidracijom ne bi raspalo u prah. Nalazišta abonosa su i u svijetu vrlo rijetka. 
-                                U našim krajevima nalaze se u starim i sadašnjim koritima rijeka Save, Vrbasa, Bosne, Drine, Krapine i Drave.`
+                                        `Drvo Jagnjeda, sa svojim mekim godovima i živim rubovima, u svaki stol unosi smirenost prirode i priču o vremenu koje je polako prolazilo.
+                                        Nepravilni rubovi i prirodne nijanse Jagnjeda čine svaki komad jedinstvenim, kao da je priroda sama potpisala svoj rad.
+                                        U rustikalnim stolovima i klupama od Jagnjeda osjeća se toplina šume, spoj sirove snage drveta i nenametljive elegancije.`
                                     }
                                 </p>
                             </div>
                         </Col>
                     </Row>
-                    <Link to="/abonos">
-                        <button className="btn-seemore">{language === "en" ? "SEE GALLERY" : "GALERIJA"}</button>
+                    <Link to="/unikatni">
+                        <button className="btn-seemore btn-seemore-abonos">{language === "en" ? "SEE GALLERY" : "GALERIJA"}</button>
                     </Link>
                 </Container>
 
