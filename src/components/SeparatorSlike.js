@@ -1,7 +1,5 @@
 import React, { useContext } from 'react'
 import { Link } from "react-router-dom";
-import stolAbonos from '../images/stolAbonos.jpg'
-import abonosOstalo from '../images/abonosOstalo.png'
 import ostaleBoje from '../images/ostaleBoje.jpeg'
 import akril from '../images/akril.jpg'
 import ulje from '../images/ulje.jpg'

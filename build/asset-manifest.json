@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.191c54ff.chunk.css",
+    "main.js": "/static/js/main.d61acf73.chunk.js",
+    "main.js.map": "/static/js/main.d61acf73.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.fd9b067d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.fd9b067d.js.map",
+    "static/css/2.150d169a.chunk.css": "/static/css/2.150d169a.chunk.css",
+    "static/js/2.762e10fc.chunk.js": "/static/js/2.762e10fc.chunk.js",
+    "static/js/2.762e10fc.chunk.js.map": "/static/js/2.762e10fc.chunk.js.map",
+    "static/js/3.f1e6a400.chunk.js": "/static/js/3.f1e6a400.chunk.js",
+    "static/js/3.f1e6a400.chunk.js.map": "/static/js/3.f1e6a400.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.150d169a.chunk.css.map": "/static/css/2.150d169a.chunk.css.map",
+    "static/css/main.191c54ff.chunk.css.map": "/static/css/main.191c54ff.chunk.css.map",
+    "static/js/2.762e10fc.chunk.js.LICENSE.txt": "/static/js/2.762e10fc.chunk.js.LICENSE.txt",
+    "static/media/abonosOstalo.b3336bb1.png": "/static/media/abonosOstalo.b3336bb1.png",
+    "static/media/akril.5f9a3994.jpg": "/static/media/akril.5f9a3994.jpg",
+    "static/media/astal.eec729ca.jpg": "/static/media/astal.eec729ca.jpg",
+    "static/media/blagovaonski.86c86ad6.jpg": "/static/media/blagovaonski.86c86ad6.jpg",
+    "static/media/App.css": "/static/media/hero.be8d7491.jpg",
+    "static/media/hr.d894134b.svg": "/static/media/hr.d894134b.svg",
+    "static/media/klupe.98bb93c6.jpg": "/static/media/klupe.98bb93c6.jpg",
+    "static/media/logo.ba4d3406.png": "/static/media/logo.ba4d3406.png",
+    "static/media/onama.3b700320.jpg": "/static/media/onama.3b700320.jpg",
+    "static/media/onama2.f7b804d9.jpg": "/static/media/onama2.f7b804d9.jpg",
+    "static/media/ostaleBoje.aaede565.jpeg": "/static/media/ostaleBoje.aaede565.jpeg",
+    "static/media/stolAbonos.93b4e407.jpg": "/static/media/stolAbonos.93b4e407.jpg",
+    "static/media/uk.70e4e37f.svg": "/static/media/uk.70e4e37f.svg",
+    "static/media/ukrasi.f9cb3a27.jpg": "/static/media/ukrasi.f9cb3a27.jpg",
+    "static/media/ulje.3c27abc7.jpg": "/static/media/ulje.3c27abc7.jpg",
+    "static/media/unikatneGarniture.e6954050.jpg": "/static/media/unikatneGarniture.e6954050.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fd9b067d.js",
+    "static/css/2.150d169a.chunk.css",
+    "static/js/2.762e10fc.chunk.js",
+    "static/css/main.191c54ff.chunk.css",
+    "static/js/main.d61acf73.chunk.js"
+  ]
+}
